@@ -1,0 +1,26 @@
+.terraform/
+.terraformrc
+terraform.rc
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+*.tfvars
+*.tfvars.json
+*.pem
+*.key
+*.hclic
+.env
+.DS_Store
+output/
+
+# Private runtime material: keep example configuration only
+private/
+.env.*
+!.env.example
+!*.tfvars.example

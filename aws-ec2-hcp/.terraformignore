@@ -1,0 +1,11 @@
+.git/
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.tfvars.json
+*.pem
+*.key
+*.hclic
+.env
