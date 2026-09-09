@@ -4,12 +4,12 @@
 
 ## 목적
 
-Terraform으로 AWS 네트워크, 애플리케이션, Vault Enterprise와 인증·데이터 계층을 구성하고 운영 절차를 연습하는 인프라 실습 프로젝트입니다.
+Terraform으로 AWS 네트워크, 애플리케이션, Vault Enterprise와 인증·데이터 계층을 구성하고 운영 절차를 연습하는 **실행형 인프라 실습 프로젝트**입니다.
 
 ## 기대 효과
 
-- 코드와 실행 계획으로 인프라의 구성·의존성을 확인합니다.
-- Vault Raft 클러스터, 머신 인증, 데이터 계층과의 연계를 함께 학습합니다.
+- 코드와 실행 계획으로 인프라 구성과 의존성을 확인합니다.
+- Vault Raft 클러스터, 머신 인증, 데이터 계층 연계를 함께 학습합니다.
 - 환경별 변수와 상태를 구분해 반복 가능한 실습 기준을 마련합니다.
 
 ## 주요 기능과 구성
@@ -24,9 +24,11 @@ Terraform으로 AWS 네트워크, 애플리케이션, Vault Enterprise와 인증
 
 Terraform 버전은 `.terraform-version`을 확인하세요. AWS 인증, HCP Terraform 또는 Terraform Enterprise 접근 권한, 사용 가능한 AMI·네트워크·키 페어와 Vault Enterprise 라이선스가 필요합니다.
 
+Terraform 설치와 기본 프로젝트 사용법은 문서 저장소의 [Terraform Setup](https://github.com/Byeongwook-Heo/Hashicorp-/blob/main/TERRAFORM_SETUP.md)을 기준 문서로 사용합니다.
+
 1. 사용할 예제 디렉터리와 `variables.tf`를 확인합니다.
 2. 실제 환경의 입력값과 원격 상태 설정을 준비합니다.
-3. 다음과 같이 초기화·검증·계획을 실행하고 변경 대상과 비용을 검토합니다.
+3. 초기화·검증·계획을 실행하고 변경 대상과 비용을 검토합니다.
 
 ```bash
 terraform -chdir=envs/dev init
@@ -41,7 +43,11 @@ terraform -chdir=envs/dev plan
 - [아키텍처](docs/architecture.md)
 - [운영](docs/operations.md)
 - [Vault 벤치마크](docs/vault-benchmark.md)
-- [Terraform 설정](TERRAFORM_SETUP.md)
+- [Terraform 기본 가이드](https://github.com/Byeongwook-Heo/Hashicorp-/blob/main/TERRAFORM_SETUP.md)
+
+## 저장소 역할
+
+이 저장소는 **실행 가능한 AWS/Terraform/Vault Enterprise 랩**만 관리합니다. 제품 설치·기초 가이드와 Runbook은 [HashiCorp Guides](https://github.com/Byeongwook-Heo/Hashicorp-)에서 관리합니다.
 
 ## 범위와 제약사항
 
