@@ -4,7 +4,7 @@
 
 ## Purpose
 
-An infrastructure lab for provisioning AWS networking, applications, Vault Enterprise, identity services, and databases with Terraform, then practicing their operation.
+An **executable infrastructure lab** for provisioning AWS networking, applications, Vault Enterprise, identity services, and databases with Terraform, then practicing their operation.
 
 ## Benefits
 
@@ -24,6 +24,8 @@ An infrastructure lab for provisioning AWS networking, applications, Vault Enter
 
 Use the Terraform version in `.terraform-version`. Prepare AWS authentication, HCP Terraform or Terraform Enterprise access, suitable AMIs/networking/key pairs, and a Vault Enterprise license.
 
+Use the canonical [Terraform Setup](https://github.com/Byeongwook-Heo/Hashicorp-/blob/main/TERRAFORM_SETUP.md) document for Terraform installation and basic project usage.
+
 1. Choose an example directory and review its `variables.tf`.
 2. Configure environment inputs and the remote backend.
 3. Initialize, validate, and review the plan and estimated costs.
@@ -41,8 +43,12 @@ Example addresses and resource IDs are placeholders. Keep credentials and Terraf
 - [Architecture](docs/architecture.md)
 - [Operations](docs/operations.md)
 - [Vault benchmarks](docs/vault-benchmark.md)
-- [Terraform setup](TERRAFORM_SETUP.md)
+- [Terraform setup](https://github.com/Byeongwook-Heo/Hashicorp-/blob/main/TERRAFORM_SETUP.md)
+
+## Repository role
+
+This repository contains **executable AWS/Terraform/Vault Enterprise lab infrastructure**. Product setup guides and operational runbooks are maintained in [HashiCorp Guides](https://github.com/Byeongwook-Heo/Hashicorp-).
 
 ## Scope and limitations
 
-This is a learning environment. EC2, RDS, NAT gateways, load balancers, storage, and logs incur costs. Review the large instance defaults before applying. Licensing, TLS, backups, and network policy require environment-specific configuration; production availability or performance is not guaranteed.
+This is a learning environment. EC2, RDS, NAT gateways, load balancers, storage, and logs incur costs. Review large instance defaults before applying. Licensing, TLS, backups, and network policy require environment-specific configuration; production availability or performance is not guaranteed.
